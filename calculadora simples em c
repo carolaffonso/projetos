@@ -1,0 +1,28 @@
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+int main()
+{
+    int x, y, soma, sub, divi, multi;
+    
+    cout << "Calculadora iniciando" << endl;
+    cout << "Digite o primeiro valor (valores inteiros apenas): " << endl;
+    cin >> x;
+    cout << "Digite o segundo valor (valores inteiros apenas): " << endl;
+    cin >> y;
+    
+    soma = x + y;
+    sub = x - y;
+    divi = x / y;
+    multi = x * y;
+    
+    cout << "Soma = " << soma << endl;
+    cout << "Subtracao = " << sub << endl;
+    cout << "Divisao = " << divi << endl;
+    cout << "Multiplicacao = " << multi << endl;
+    
+    system ("pause");
+
+    return 0;
+}
