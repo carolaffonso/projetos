@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    int numeroinicial;
+    int numerofinal;
+    int contadorpares;  // Variável para contar os números pares
+    contadorpares = 0; //para garantir que está começando do zero
+
+    printf("Digite o primeiro valor (número inicial): ");
+    scanf("%d", &numeroinicial);
+
+    printf("Digite o segundo valor (número final): ");
+    scanf("%d", &numerofinal);
+
+    // Verificando e garantido que o inicial seja menor que o final
+    if (numeroinicial > numerofinal) {
+        int temp = numeroinicial;
+        numeroinicial = numerofinal;
+        numerofinal = temp;
+    }
+
+    // Vai mostrando se os valores são pares ou ímpares
+    printf("\nLista de números entre %d e %d:\n", numeroinicial, numerofinal);
+    for (int i = numeroinicial; i <= numerofinal; i++) {
+        if (i % 2 == 0) {
+            printf("%d é par\n", i);  
+            contadorpares++;  // Aqui vai aumentando o contador de par
+        } else {
+            printf("%d é ímpar\n", i);  
+        }
+    }
+
+    printf("\nTotal de números pares no intervalo: %d\n", contadorpares);
+
+    return 0;
+}
