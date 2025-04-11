@@ -1,0 +1,18 @@
+
+#include <stdio.h> //somar todos os numeros de 1 a 10
+
+int main()
+
+{
+int soma, i;
+i=0;
+soma = 0;
+
+while (i<=10) { 
+    soma = soma + i;
+    i++;
+}
+
+    printf("Soma %d", soma);
+    return 0;
+}
