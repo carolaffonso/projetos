@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+
+{
+int i, int1, int2, next;
+int1 = 0;
+int2 =1;
+
+    printf("%d\n", int1);
+    printf("%d\n", int2);
+    
+    for (i=3; i<=8; i++) {
+        next = int1+int2;
+    printf("%d\n", next);
+        int1 = int2;
+        int2 = next;
+    }
+    
+    
+    return 0;
+}
