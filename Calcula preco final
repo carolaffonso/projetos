@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+
+int main()
+
+{
+float fabrica, lucro, imposto, lucrot, impostot, total;
+
+printf("Digite o valor de fábrica: \n");
+scanf("%f", &fabrica);
+
+printf("Digite o valor de lucro: \n");
+scanf("%f", &lucro);
+
+printf("Digite o valor de impostos: \n");
+scanf("%f", &imposto);
+
+lucrot = fabrica * lucro;
+impostot = fabrica * imposto;
+total = fabrica + lucrot + impostot;
+
+printf("Lucro: %.2f \n", lucrot);
+printf("Impostos: %.2f \n", impostot);
+printf("Valor total: %.2f \n", total);
+
+
+
+    return 0;
+}
